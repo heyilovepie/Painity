@@ -7,7 +7,7 @@ var results = [];
 
 $(function(){
 
-  var amount = 4;
+  var amount = 7;
   var col = 7;
 
   var rows = Math.floor( amount/col );
