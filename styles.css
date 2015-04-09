@@ -1,0 +1,11 @@
+#picture-container{
+	width: 100%;
+	padding: 100px 50px;
+	background-color: #ffffaa;
+}
+
+#picture-container div{
+	height: 100px;
+	width: 100%;
+	background-color: #111aaa;
+}
