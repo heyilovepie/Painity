@@ -9,3 +9,9 @@
 	width: 100%;
 	background-color: #111aaa;
 }
+
+#picture-container img{
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+}

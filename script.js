@@ -7,8 +7,8 @@ $(function(){
 
   var amount = 4;
   var col = 4;
-  var rows = Math.floor( amount/col );
 
+  var rows = Math.floor( amount/col );
   var $picContainer = $("#picture-container");
   var shuffleArray = [];
   for( var i = 0; i < amount; i++){
