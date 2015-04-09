@@ -21,9 +21,16 @@ $(function(){
     for( var j = 0; j < col; j++){
       var $img = $(document.createElement('img'));
       $img.attr("src", "images/image" + shuffleArray[counter] + ".jpg");
+      $img.attr("id", shuffleArray[counter]);
       counter ++;
       $div.append($img);
     }
   $picContainer.append($div);
   }
+
+
+  $('#picture-container img').click(function(){
+    var name = $(this).attr("id");
+    console.log(name);
+  });
 });
