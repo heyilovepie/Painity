@@ -8,7 +8,7 @@ var results = [];
 $(function(){
 
   var amount = 4;
-  var col = 4;
+  var col = 7;
 
   var rows = Math.floor( amount/col );
   var $picContainer = $("#picture-container");
@@ -20,7 +20,7 @@ $(function(){
   var counter = 0;
   for( var i = 0; i < rows; i++ ){
   var $div = $(document.createElement('div'));
-  $div.attr("id", rows  );
+  $div.attr("id", i  );
     for( var j = 0; j < col; j++){
       var $img = $(document.createElement('img'));
       $img.attr("src", "images/image" + shuffleArray[counter] + ".jpg");
@@ -37,7 +37,5 @@ $(function(){
     var name = element.attr("id");
     var row = element.parent().attr("id");
     results[parseInt(row)] = name;
-    console.log(results);
-    console.log( "row = " + row + ". name = " + name );
   });
 });
