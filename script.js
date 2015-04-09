@@ -22,7 +22,7 @@ $(function(){
     for( var j = 0; j < col; j++){
       console.log("inner loop" + j);
       var $img = $(document.createElement('img'));
-      $img.attr("src", "img/images" + shuffleArray[counter] + ".jpg");
+      $img.attr("src", "images/image" + shuffleArray[counter] + ".jpg");
       counter ++;
       $div.append($img);
     }
