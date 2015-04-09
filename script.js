@@ -3,6 +3,8 @@ function shuffle(o){ //v1.0
     return o;
 };
 
+var results = [];
+
 $(function(){
 
   var amount = 4;
@@ -18,6 +20,7 @@ $(function(){
   var counter = 0;
   for( var i = 0; i < rows; i++ ){
   var $div = $(document.createElement('div'));
+  $div.attr("id", rows  );
     for( var j = 0; j < col; j++){
       var $img = $(document.createElement('img'));
       $img.attr("src", "images/image" + shuffleArray[counter] + ".jpg");
@@ -30,7 +33,11 @@ $(function(){
 
 
   $('#picture-container img').click(function(){
-    var name = $(this).attr("id");
-    console.log(name);
+    var element = $(this);
+    var name = element.attr("id");
+    var row = element.parent().attr("id");
+    results[parseInt(row)] = name;
+    console.log(results);
+    console.log( "row = " + row + ". name = " + name );
   });
 });
