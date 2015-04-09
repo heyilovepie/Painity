@@ -17,10 +17,8 @@ $(function(){
   shuffleArray = shuffle( shuffleArray );
   var counter = 0;
   for( var i = 0; i < rows; i++ ){
-          console.log("outer loop" + i);
   var $div = $(document.createElement('div'));
     for( var j = 0; j < col; j++){
-      console.log("inner loop" + j);
       var $img = $(document.createElement('img'));
       $img.attr("src", "images/image" + shuffleArray[counter] + ".jpg");
       counter ++;

@@ -12,5 +12,6 @@
 #picture-container img{
 	height: 100%;
 	width: 20%;
+	margin: 0 10px;
 	display: inline-block;
 }
